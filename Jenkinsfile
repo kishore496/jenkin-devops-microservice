@@ -20,15 +20,18 @@ pipeline {
 		}
 	} 
 	post {
-			always {
-				echo 'Im awesome. I run always'
-			}
-			success {
-				echo 'I run when you are succsseful'
-			}
-			failure {
-				echo 'I run when you are fail'
-			}
+		always {
+			echo 'Im awesome. I run always'
+		}
+		success {
+			echo 'I run when you are succsseful'
+		}
+		failure {
+			echo 'I run when you are fail'
+		}
+		changed {
+			echo 'I run when status of the Build changed'
+		}
 	}
 	
 }
